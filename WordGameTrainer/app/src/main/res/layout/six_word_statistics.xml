@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/incorrectGuessesLegacy"
+        android:layout_width="39dp"
+        android:layout_height="142dp"
+        android:layout_marginBottom="36dp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="@+id/textView3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.731"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/stats_rectangle" />
+
+    <ImageView
+        android:id="@+id/correctGuessesLegacy"
+        android:layout_width="39dp"
+        android:layout_height="142dp"
+        android:layout_marginBottom="36dp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="@+id/textView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.306"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/stats_rectangle" />
+
+    <TextView
+        android:id="@+id/correctGuessCountLegacy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="4dp"
+        android:text="Correct Guesses"
+        android:textSize="20sp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="@+id/correctGuessesLegacy"
+        app:layout_constraintEnd_toEndOf="@+id/correctGuessesLegacy"
+        app:layout_constraintStart_toStartOf="@+id/correctGuessesLegacy" />
+
+    <TextView
+        android:id="@+id/incorrectGuessCountLegacy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="4dp"
+        android:text="Incorrect Guesses"
+        android:textSize="20sp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="@+id/incorrectGuessesLegacy"
+        app:layout_constraintEnd_toEndOf="@+id/incorrectGuesses"
+        app:layout_constraintHorizontal_bias="0.504"
+        app:layout_constraintStart_toStartOf="@+id/incorrectGuessesLegacy" />
+
+    <ImageView
+        android:id="@+id/correctGuesses"
+        android:layout_width="39dp"
+        android:layout_height="142dp"
+        android:layout_marginBottom="36dp"
+        app:layout_constraintBottom_toTopOf="@+id/textView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.306"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/stats_rectangle" />
+
+    <ImageView
+        android:id="@+id/incorrectGuesses"
+        android:layout_width="39dp"
+        android:layout_height="142dp"
+        android:layout_marginBottom="36dp"
+        app:layout_constraintBottom_toTopOf="@+id/textView3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.731"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/stats_rectangle" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="356dp"
+        android:text="Correct Guesses"
+        app:layout_constraintEnd_toEndOf="@+id/correctGuesses"
+        app:layout_constraintStart_toStartOf="@+id/correctGuesses"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/correctGuessCount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="4dp"
+        android:text="Correct Guesses"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/correctGuesses"
+        app:layout_constraintEnd_toEndOf="@+id/correctGuesses"
+        app:layout_constraintStart_toStartOf="@+id/correctGuesses" />
+
+    <TextView
+        android:id="@+id/incorrectGuessCount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="4dp"
+        android:text="Incorrect Guesses"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/incorrectGuesses"
+        app:layout_constraintEnd_toEndOf="@+id/incorrectGuesses"
+        app:layout_constraintHorizontal_bias="0.504"
+        app:layout_constraintStart_toStartOf="@+id/incorrectGuesses" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="356dp"
+        android:text="Incorrect Guesses"
+        app:layout_constraintEnd_toEndOf="@+id/incorrectGuesses"
+        app:layout_constraintStart_toStartOf="@+id/incorrectGuesses"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/legacyStatsButton"
+        android:layout_width="152dp"
+        android:layout_height="56dp"
+        android:layout_marginBottom="236dp"
+        android:text="Legacy Statistics"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.853"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/sessionStatsButton"
+        android:layout_width="152dp"
+        android:layout_height="56dp"
+        android:layout_marginBottom="236dp"
+        android:text="Session Statistics"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.154"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/clearDataButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="128dp"
+        android:text="Clear Data"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/homeButtonSixWordStats"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:text="Home"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/clearDataButton" />
+</androidx.constraintlayout.widget.ConstraintLayout>

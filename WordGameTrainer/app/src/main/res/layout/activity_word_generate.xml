@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <ImageView
+        android:id="@+id/woodBackground2"
+        android:layout_width="423dp"
+        android:layout_height="818dp"
+        android:rotation="0"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/light_brown_wooden_textured_background" />
+
+    <ImageView
+        android:id="@+id/firstLetter"
+        android:layout_width="160dp"
+        android:layout_height="88dp"
+        android:layout_marginStart="78dp"
+        android:layout_marginTop="96dp"
+        android:translationY="70dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/a" />
+
+    <ImageView
+        android:id="@+id/firstLetterTint"
+        android:layout_width="160dp"
+        android:layout_height="88dp"
+        android:layout_marginStart="78dp"
+        android:layout_marginTop="96dp"
+        android:translationY="70dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/a"
+        app:tint="#0D000000" />
+
+    <ImageView
+        android:id="@+id/secondLetter"
+        android:layout_width="160dp"
+        android:layout_height="88dp"
+        android:layout_marginTop="96dp"
+        android:layout_marginEnd="78dp"
+        android:translationY="70dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/a" />
+
+    <ImageView
+        android:id="@+id/secondLetterTint"
+        android:layout_width="160dp"
+        android:layout_height="88dp"
+        android:layout_marginTop="96dp"
+        android:layout_marginEnd="78dp"
+        android:translationY="70dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/a"
+        app:tint="#0D000000" />
+
+    <ImageView
+        android:id="@+id/isThisWord"
+        android:layout_width="236dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="288dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/is_this_a_word_" />
+
+    <ImageButton
+        android:id="@+id/yesButton"
+        android:layout_width="119dp"
+        android:layout_height="56dp"
+        android:layout_marginTop="400dp"
+        android:background="@null"
+        android:scaleType="fitCenter"
+        android:src="@drawable/yesbutton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.241"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/noButton"
+        android:layout_width="119dp"
+        android:layout_height="56dp"
+        android:layout_marginTop="400dp"
+        android:background="@null"
+        android:scaleType="fitCenter"
+        android:src="@drawable/nobutton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.759"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/nextButton"
+        android:layout_width="122dp"
+        android:layout_height="62dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginBottom="56dp"
+        android:background="@null"
+        android:clickable="false"
+        android:scaleType="fitCenter"
+        android:src="@drawable/next"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <FrameLayout
+        android:id="@+id/definitionBox"
+        android:layout_width="327dp"
+        android:layout_height="47dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginBottom="100dp"
+        android:background="@drawable/rectangle"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="@+id/nextButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/noButton">
+
+        <TextView
+            android:id="@+id/wordDefinition"
+            android:layout_width="match_parent"
+            android:layout_height="47dp"
+            android:gravity="center"
+            android:text="Definition"
+            android:textSize="20sp"
+            android:textStyle="italic" />
+
+    </FrameLayout>
+
+    <ImageView
+        android:id="@+id/yesCheck"
+        android:layout_width="48dp"
+        android:layout_height="41dp"
+        android:layout_marginBottom="12dp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="@+id/yesButton"
+        app:layout_constraintEnd_toEndOf="@+id/yesButton"
+        app:layout_constraintStart_toStartOf="@+id/yesButton"
+        app:srcCompat="@drawable/checkmark_png_25954" />
+
+    <ImageView
+        android:id="@+id/yesX"
+        android:layout_width="48dp"
+        android:layout_height="41dp"
+        android:layout_marginBottom="12dp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="@+id/yesButton"
+        app:layout_constraintEnd_toEndOf="@+id/yesButton"
+        app:layout_constraintStart_toStartOf="@+id/yesButton"
+        app:srcCompat="@drawable/nicepng_wrong_mark_png_2514254" />
+
+    <ImageView
+        android:id="@+id/noCheck"
+        android:layout_width="48dp"
+        android:layout_height="41dp"
+        android:layout_marginBottom="12dp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="@+id/noButton"
+        app:layout_constraintEnd_toEndOf="@+id/noButton"
+        app:layout_constraintStart_toStartOf="@+id/noButton"
+        app:srcCompat="@drawable/checkmark_png_25954" />
+
+    <ImageView
+        android:id="@+id/noX"
+        android:layout_width="48dp"
+        android:layout_height="41dp"
+        android:layout_marginBottom="12dp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="@+id/noButton"
+        app:layout_constraintEnd_toEndOf="@+id/noButton"
+        app:layout_constraintStart_toStartOf="@+id/noButton"
+        app:srcCompat="@drawable/nicepng_wrong_mark_png_2514254" />
+
+    <ImageButton
+        android:id="@+id/homeButtonWordGenerate"
+        android:layout_width="122dp"
+        android:layout_height="62dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginBottom="56dp"
+        android:background="@null"
+        android:scaleType="fitCenter"
+        android:src="@drawable/home"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+    <com.google.android.gms.ads.AdView
+        xmlns:ads="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/adView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        ads:adSize="BANNER"
+        ads:adUnitId="ca-app-pub-6274511967359129/6212285365"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"></com.google.android.gms.ads.AdView>
+
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="370dp"
+        android:layout_height="99dp"
+        android:layout_marginTop="56dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.52"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/two_letter_trainer" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
